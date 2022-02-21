@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="../../main.js"></script>
+</head>
+
+<body>
+
+<!--ANSWER BLOCK-->
+<div id="answer">
+  Your answer
+</div>
+
+<!--QUESTION BLOCK-->
+<div id="question">
+  <h3>Полезные ссылки</h3>
+  <ul class="question-list">
+    <li><a target="_blank" href="https://basicweb.ru/html/formi.php">Формы</a></li>
+    <li><a target="_blank" href="https://basicweb.ru/html/spisok_oblast.php">Раскрывающийся список и текстовая область</a></li>
+    <li><a target="_blank" href="https://basicweb.ru/html/button.php">HTML тег кнопка</a></li>
+    <li>
+      HTML теги
+      <ul>
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_textarea.php">textarea</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_name.php">name</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_cols.php">cols</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_rows.php">rows</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_maxlength.php">maxlength</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_required.php">required</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_textarea_att_placeholder.php">placeholder</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_select.php">select</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_select_att_name.php">name</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_select_att_required.php">required</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_option.php">option</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_option_att_value.php">value</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_option_att_selected.php">selected</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_optgroup.php">optgroup</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_optgroup_att_label.php">label</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_optgroup_att_disabled.php">disabled</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_button.php">button</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_button_att_type.php">type</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Задание</h3>
+  <p>Создайте форму как показано в примере</p>
+  <ul>
+    <li>
+      Textarea
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Описание</code>
+        </li>
+        <li>
+          placeholder - <code class="inline-code">Enter text ...</code>
+        </li>
+        <li>
+          Валидация
+          <ul>
+            <li>Поле должно быть заполнено</li>
+            <li>Максимальное число символов 500</li>
+          </ul>
+        </li>
+        <li>
+          Размер textarea
+          <ul>
+            <li>Высота 20 символов</li>
+            <li>Ширина 40 символов</li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+    <li>
+      Select
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Категории</code>
+        </li>
+        <ul>
+          <li>
+            Валидация
+            <ul>
+              <li>Должна быть выбрана любая категория (required)</li>
+            </ul>
+          </li>
+        </ul>
+        <li>
+          Первый <code class="inline-code">option</code> используется как placeholder
+          <ul>
+            <li>описание - <code class="inline-code">Выберите категорию</code></li>
+            <li>value - пустая строка <code class="inline-code">""</code></li>
+          </ul>
+        </li>
+        <li>
+          Первая группа
+          <ul>
+            <li>label - <code class="inline-code">Компьютеры и ноутбуки</code></li>
+            <li>
+              options
+              <ul>
+                <li><code class="inline-code">Ноутбуки</code></li>
+                <li><code class="inline-code">Компьютеры</code></li>
+                <li><code class="inline-code">Мониторы</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Вторая группа (группа должна быть отключена)
+          <ul>
+            <li>label - <code class="inline-code">Консоли</code></li>
+            <li>
+              options
+              <ul>
+                <li><code class="inline-code">Геймпады</code></li>
+                <li><code class="inline-code">Игры</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Button
+      <ul>
+        <li>Содержимое - текст <code class="inline-code">Отправить</code></li>
+        <li>type - <code class="inline-code">submit</code></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Пример</h3>
+  <img width="100%" src="img/example.png">
+
+</div>
+
+</body>
+</html>

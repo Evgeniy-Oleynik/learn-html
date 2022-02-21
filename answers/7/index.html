@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="../../main.js"></script>
+</head>
+
+<body>
+
+<!--ANSWER BLOCK-->
+<div id="answer">
+  Your answer
+</div>
+
+<!--QUESTION BLOCK-->
+<div id="question">
+  <h3>Полезные ссылки</h3>
+  <ul class="question-list">
+    <li><a target="_blank" href="https://basicweb.ru/html/formi.php">Формы</a></li>
+    <li>
+      HTML теги
+      <ul>
+        <li><a target="_blank" href="https://basicweb.ru/html/tag_form.php">form</a></li>
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_input.php">input</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_type.php">type</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_name.php">name</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_value.php">value</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_multiple.php">multiple</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_disabled.php">disabled</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_maxlength.php">maxlength</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_required.php">required</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_max.php">max</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_min.php">min</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_input_att_accept.php">accept</a></li>
+                <li><a target="_blank" href="https://basicweb.ru/html/global_att_id.php">id</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a target="_blank" href="https://basicweb.ru/html/tag_label.php">label</a>
+          <ul>
+            <li>
+              Атрибуты
+              <ul>
+                <li><a target="_blank" href="https://basicweb.ru/html/tag_label_att_for.php">for</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Глобальные атрибуты
+      <ul>
+        <li><a target="_blank" href="https://basicweb.ru/html/global_att_id.php">id</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Задание</h3>
+  <p>Создайте форму как показано в примере</p>
+  <ul>
+    <li>
+      Text
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Название товара</code>
+        </li>
+        <li>
+          input
+          <ul>
+            <li>
+              Валидация
+              <ul>
+                <li>Поле должно быть заполнено (required)</li>
+                <li>Строка должна быть не больше 15 символов (maxlength="15")</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Radio
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Есть в наличии</code>
+        </li>
+        <li>
+          1й input
+          <ul>
+            <li>label - <code class="inline-code">Да</code></li>
+            <li>value - <code class="inline-code">yes</code></li>
+          </ul>
+        </li>
+        <li>
+          2й input
+          <ul>
+            <li>label - <code class="inline-code">Нет</code></li>
+            <li>value - <code class="inline-code">no</code></li>
+            <li>Должен быть выбран по умолчанию (checked)</li>
+          </ul>
+        </li>
+        <li>
+          3й input
+          <ul>
+            <li>label - <code class="inline-code">Ожидается</code></li>
+            <li>value - <code class="inline-code">expected</code></li>
+            <li>Должен быть отключен (disabled)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Color
+      <ul>
+        <li>
+          input
+          <ul>
+            <li>label - <code class="inline-code">Цвет</code></li>
+            <li>value - <code class="inline-code">#e66465</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Сheckbox
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Материал</code>
+        </li>
+        <li>
+          1й input
+          <ul>
+            <li>label - <code class="inline-code">Другой</code></li>
+            <li>value - <code class="inline-code">other</code></li>
+            <li>Должен быть выбран по умолчанию (checked)</li>
+          </ul>
+        </li>
+        <li>
+          2й input
+          <ul>
+            <li>label - <code class="inline-code">Пластмасс</code></li>
+            <li>value - <code class="inline-code">plastic</code></li>
+          </ul>
+        </li>
+        <li>
+          3й input
+          <ul>
+            <li>label - <code class="inline-code">Металл</code></li>
+            <li>value - <code class="inline-code">metal</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      File
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Фото</code>
+        </li>
+        <li>
+          input
+          <ul>
+            <li>Должна быть возможность выбрать несколько фотографий (multiple)</li>
+            <li>
+              Валидация
+              <ul>
+                <li>Должна быть возможность выбрать только картинки (accept="image/*")</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Number
+      <ul>
+        <li>
+          Описание - <code class="inline-code">Цена</code>
+        </li>
+        <li>
+          input
+          <ul>
+            <li>
+              Валидация
+              <ul>
+                <li>Поле должно быть заполнено (required)</li>
+                <li>Число должно быть не меньше 5 (min="5")</li>
+                <li>Число должно быть не больше 5000 (max="5000")</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Submit
+      <ul>
+        <li>
+          input
+          <ul>
+            <li>value - <code class="inline-code">Отправить</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <h3>Пример</h3>
+  <img width="100%" src="img/example.png">
+
+</div>
+
+</body>
+</html>
