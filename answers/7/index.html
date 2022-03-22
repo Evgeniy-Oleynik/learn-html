@@ -10,7 +10,53 @@
 
 <!--ANSWER BLOCK-->
 <div id="answer">
-  Your answer
+  <p><b>Название товара</b></p>
+  <form>
+    <label for="productName"></label>
+    <input type="text" id="productName" maxlength="15" required>
+  </form>
+  <br>
+  <p><b>Есть в наличии</b></p>
+  <form>
+    <label for="yes">Да</label>
+    <input type="radio" id="yes" name="isAvailable" value="yes">
+    <label for="no">Нет</label>
+    <input type="radio" id="no" name="isAvailable" value="no" checked>
+    <label for="expected">Ожидается</label>
+    <input type="radio" id="expected" name="isAvailable" value="expected" disabled>
+  </form>
+  <br>
+  <form>
+    <label for="color">Цвет</label>
+    <input type="color" id="color" value="#e66465">
+  </form>
+  <br>
+  <p><b>Материал</b></p>
+  <form>
+    <label for="other">Другой</label>
+    <input type="checkbox" id="other" name="material" value="other" checked><br>
+    <label for="plastic">Пластмасс</label>
+    <input type="checkbox" id="plastic" name="material" value="plastic"><br>
+    <label for="metal">Металл</label>
+    <input type="checkbox" id="metal" name="material" value="metal">
+  </form>
+  <br>
+  <p><b>Фото</b></p>
+  <form>
+    <label for="photo"></label>
+    <input type="file" id="photo" multiple accept="image/*">
+  </form>
+  <br>
+  <p><b>Цена</b></p>
+  <form>
+    <label for="price"></label>
+    <input type="number" id="price" required min="5" max="5000">
+  </form>
+  <br>
+  <form>
+    <label for="submit"></label>
+    <input type="submit" id="submit" value="Отправить">
+  </form>
 </div>
 
 <!--QUESTION BLOCK-->
